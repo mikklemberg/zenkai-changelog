@@ -231,7 +231,6 @@ main {
     margin-bottom: 1.5rem;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .entry-hero img {
@@ -248,7 +247,6 @@ main {
     font-weight: 600;
     font-size: var(--text-base);
     letter-spacing: var(--tracking-prose);
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
