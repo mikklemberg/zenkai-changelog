@@ -290,7 +290,7 @@ main {
 }
 
 .content p {
-    color: var(--color-text-secondary);
+    color: var(--color-text);
     font-size: var(--text-base);
     line-height: var(--leading-prose);
     letter-spacing: var(--tracking-prose);
@@ -309,12 +309,12 @@ main {
     font-size: var(--text-base);
     line-height: var(--leading-prose);
     letter-spacing: var(--tracking-prose);
-    color: var(--color-text-secondary);
+    color: var(--color-text);
 }
 
 .content li::before {
     content: "•";
-    color: var(--color-primary);
+    color: var(--color-text);
     font-weight: bold;
     margin-right: 0.75rem;
     margin-top: 0.125rem;
@@ -353,7 +353,7 @@ main {
     border-left: 4px solid var(--color-primary);
     padding-left: 1.5rem;
     margin: 1.5rem 0;
-    color: var(--color-text-secondary);
+    color: var(--color-text);
     font-style: italic;
 }
 
