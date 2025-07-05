@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="changelog-entries">
+    {% for post in site.posts %}
+        <article class="entry">
+            <div class="entry-date">{{ post.date | date: "%B %d, %Y" }}</div>
+            <h2 class="entry-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h2>
+            {% if post.excerpt %}
+                <p class="entry-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+            {% endif %}
+            <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+        </article>
+    {% endfor %}
+    
+    {% if site.posts.size == 0 %}
+        <div class="no-entries">
+            <p>No changelog entries yet. Check back soon!</p>
+        </div>
+    {% endif %}
+</div>
