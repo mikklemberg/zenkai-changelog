@@ -62,7 +62,6 @@ body {
 /* Header Styles */
 header {
     background: var(--color-background);
-    border-bottom: 1px solid var(--color-border);
     padding: 3rem 0;
 }
 
@@ -73,6 +72,8 @@ header {
     line-height: var(--leading-h1);
     letter-spacing: var(--tracking-h1);
     margin-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+
 }
 
 .header-content p {
