@@ -68,23 +68,5 @@
             {{ content }}
         </div>
     </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; {{ 'now' | date: "%Y" }} Zenkai. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Simple analytics -->
-    <script>
-        console.log('Zenkai Changelog loaded{% if page.title %}: {{ page.title }}{% endif %}');
-        
-        // Track external link clicks
-        document.querySelectorAll('a[href^="http"]').forEach(link => {
-            link.addEventListener('click', function() {
-                console.log('External link clicked:', this.href);
-            });
-        });
-    </script>
 </body>
 </html>
