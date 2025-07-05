@@ -1,0 +1,69 @@
+# Jekyll Configuration for Zenkai Changelog
+
+# Site settings
+title: "Zenkai Changelog"
+description: "Behind the line — Updates and improvements to Zenkai"
+url: "https://changelog.zenkai.ee"
+baseurl: ""
+
+# Author
+author:
+  name: "Zenkai teami"
+  email: "mikklemberg@icloud.com"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:title/
+
+# Pagination
+paginate: 10
+paginate_path: "/page/:num/"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO
+twitter:
+  username: zenkai
+  card: summary_large_image
+
+# Social
+social:
+  name: Zenkai
+  links:
+    - https://zenkai.ee
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "entry"
+      permalink: /:title/
+
+# Custom variables
+main_site_url: "https://zenkai.ee"
+app_url: "https://zenkai.ee/app"
+docs_url: "https://zenkai.ee/docs"
