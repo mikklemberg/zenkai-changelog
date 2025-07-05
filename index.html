@@ -7,11 +7,7 @@ layout: default
         <article class="entry">
             <div class="entry-date">
                 <a href="{{ post.url | relative_url }}">{{ post.date | date: "%B %d, %Y" }}</a>
-            </div>
-            <h2 class="entry-title">
-                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            </h2>
-            
+            </div>            
             {% if post.hero_text %}
                 <div class="entry-hero">
                     <div class="placeholder">
