@@ -167,32 +167,12 @@ main {
 }
 
 /* Hero */
-.entry-hero {
-    width: 100%;
-    height: auto;
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    margin-bottom: 1.5rem;
-    overflow: hidden;
-}
-
 .entry-hero img {
     width: 100%;
     height: auto;
     display: block;
-}
+   margin-bottom: 1.5rem;
 
-.placeholder {
-    background: var(--color-background);
-    color: var(--color-text);
-    padding: 1.25rem 1.75rem;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: var(--text-base);
-    text-align: center;
 }
 
 .hero-link {
