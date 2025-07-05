@@ -65,6 +65,10 @@ header {
     padding: 3rem 0;
 }
 
+.header-content {
+    border-bottom: 1px solid var(--color-border);
+}
+
 .header-content h1 {
     font-size: var(--text-h1);
     font-weight: 700;
@@ -72,8 +76,6 @@ header {
     line-height: var(--leading-h1);
     letter-spacing: var(--tracking-h1);
     margin-bottom: 1rem;
-    border-bottom: 1px solid var(--color-border);
-
 }
 
 .header-content p {
@@ -81,7 +83,7 @@ header {
     color: var(--color-text-secondary);
     line-height: var(--leading-prose);
     letter-spacing: var(--tracking-prose);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .header-links {
