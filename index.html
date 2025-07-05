@@ -5,14 +5,38 @@ layout: default
 <div class="changelog-entries">
     {% for post in site.posts %}
         <article class="entry">
-            <div class="entry-date">{{ post.date | date: "%B %d, %Y" }}</div>
+            <div class="entry-date">
+                <a href="{{ post.url | relative_url }}">{{ post.date | date: "%B %d, %Y" }}</a>
+            </div>
             <h2 class="entry-title">
                 <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
             </h2>
-            {% if post.excerpt %}
-                <p class="entry-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+            
+            {% if post.hero_text %}
+                <div class="entry-hero">
+                    <div class="placeholder">
+                        {{ post.hero_text }}
+                    </div>
+                </div>
+                {% if post.video_link %}
+                    <a href="{{ post.video_link }}" class="view-demo" target="_blank" rel="noopener noreferrer">View demo</a>
+                {% endif %}
+            {% elsif post.image %}
+                <div class="entry-hero">
+                    {% if post.image contains 'http' %}
+                        <img src="{{ post.image }}" alt="{{ post.title }}">
+                    {% else %}
+                        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+                    {% endif %}
+                </div>
+                {% if post.video_link %}
+                    <a href="{{ post.video_link }}" class="view-demo" target="_blank" rel="noopener noreferrer">View demo</a>
+                {% endif %}
             {% endif %}
-            <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+            
+            <div class="content">
+                {{ post.content }}
+            </div>
         </article>
     {% endfor %}
     
