@@ -1,4 +1,4 @@
-# Jekyll Configuration for Zenkai Changelog
+# Jekyll configuration for Zenkai changelog
 
 # Site settings
 title: "Zenkai changelog"
@@ -67,4 +67,4 @@ defaults:
 main_site_url: "https://zenkai.ee"
 app_url: "https://zenkai.ee/app"
 docs_url: "https://zenkai.ee/docs"
-feedback_email: "mikklemberg@icloud.com"  # Add this new line
+feedback_email: "mikklemberg@icloud.com"
