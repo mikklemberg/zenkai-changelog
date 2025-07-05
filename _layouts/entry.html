@@ -4,20 +4,21 @@ layout: default
 
 {% if page.image %}
     <div class="entry-hero">
-        {% if page.image contains 'http' %}
-            <img src="{{ page.image }}" alt="{{ page.title }}">
+        {% if page.hero_link %}
+            <a href="{{ page.hero_link }}" target="_blank" rel="noopener noreferrer" class="hero-link">
+                {% if page.image contains 'http' %}
+                    <img src="{{ page.image }}" alt="{{ page.title }}">
+                {% else %}
+                    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+                {% endif %}
+            </a>
         {% else %}
-            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+            {% if page.image contains 'http' %}
+                <img src="{{ page.image }}" alt="{{ page.title }}">
+            {% else %}
+                <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+            {% endif %}
         {% endif %}
-    </div>
-    {% if page.video_link %}
-        <a href="{{ page.video_link }}" class="view-demo" target="_blank" rel="noopener noreferrer">View demo</a>
-    {% endif %}
-{% elsif page.hero_text %}
-    <div class="entry-hero">
-        <div class="placeholder">
-            {{ page.hero_text }}
-        </div>
     </div>
     {% if page.video_link %}
         <a href="{{ page.video_link }}" class="view-demo" target="_blank" rel="noopener noreferrer">View demo</a>
