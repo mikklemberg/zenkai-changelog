@@ -1,7 +1,7 @@
 # Jekyll Configuration for Zenkai Changelog
 
 # Site settings
-title: "Zenkai Changelog"
+title: "Zenkai changelog"
 description: "Behind the line — Updates and improvements to Zenkai"
 url: "https://changelog.zenkai.ee"
 baseurl: ""
