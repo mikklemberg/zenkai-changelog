@@ -3,12 +3,12 @@
 # Site settings
 title: "Zenkai Changelog"
 description: "Behind the line — Updates and improvements to Zenkai"
-url: "https://changelog.zenkai.ee"
-baseurl: ""
+url: "https://mikklemberg.github.io"
+baseurl: "/zenkai-changelog"
 
 # Author
 author:
-  name: "Zenkai teami"
+  name: "Zenkai team"
   email: "mikklemberg@icloud.com"
 
 # Build settings
